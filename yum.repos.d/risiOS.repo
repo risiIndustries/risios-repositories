@@ -1,0 +1,7 @@
+[risiOS]
+name=Copr repo for risiOS
+baseurl=https://copr-be.cloud.fedoraproject.org/results/risi/risiOS/fedora-$releasever-$basearch/
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/risi/risiOS/pubkey.gpg
+enabled=1
