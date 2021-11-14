@@ -4,8 +4,8 @@ Release:	2%{?dist}
 Summary:	Repository files for searchable repositories
 
 License:	GPL
-URL:		https://github.com/risiOS/risios-repositories
-Source0:	https://github.com/risiOS/risios-repositories/archive/refs/heads/main.tar.gz#/Adwaita-recolor-main.tar.gz
+URL:		  https://github.com/risiOS/risios-repositories
+Source0:	https://github.com/risiOS/risios-repositories/archive/refs/heads/main.tar.gz#/risios-repositories-main.tar.gz
 
 BuildArch:	noarch
 
