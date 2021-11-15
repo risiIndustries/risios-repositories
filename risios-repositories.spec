@@ -28,8 +28,8 @@ via search in gnome-software.
 mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
 mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/pki/rpm-gpg
 mkdir -p $RPM_BUILD_ROOT%{_prefix}/lib/fedora-third-party/conf.d
-cp -a yum.repos.d $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
-cp -a rpm-gpg $RPM_BUILD_ROOT%{_sysconfdir}/pki/rpm-gpg
+cp yum.repos.d/* $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
+cp rpm-gpg/* $RPM_BUILD_ROOT%{_sysconfdir}/pki/rpm-gpg
 cp risios.conf $RPM_BUILD_ROOT%{_prefix}/lib/fedora-third-party/conf.d/
 
 %files
