@@ -33,22 +33,9 @@ cp rpm-gpg/* $RPM_BUILD_ROOT%{_sysconfdir}/pki/rpm-gpg
 cp risios.conf $RPM_BUILD_ROOT%{_prefix}/lib/fedora-third-party/conf.d/
 
 %files
-%config(noreplace) %{_sysconfdir}/yum.repos.d/brave.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/fedora-cisco-openh264.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/google-chrome.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/google-earth-pro.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/google-webdesigner.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/microsoft-edge.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/opera.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/risiOS.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/rpmfusion-free.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/rpmfusion-free-updates.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/rpmfusion-free-updates-testing.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/rpmfusion-nonfree.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/rpmfusion-nonfree-updates.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/rpmfusion-nonfree-updates-testing.repo
-%config(noreplace) %{_sysconfdir}/yum.repos.d/vivaldi.repo
 %{_prefix}/lib/fedora-third-party/conf.d/*.conf
+%config(noreplace) /etc/yum.repos.d/*
+/etc/pki/rpm-gpg/*
 
 %changelog
 * Sun Nov 14 2021 PizzaLovingNerd <pizzalovingnerd@teknik.io> - 35-1
