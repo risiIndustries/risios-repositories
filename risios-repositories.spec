@@ -1,6 +1,6 @@
 Name:		risios-repositories
 Version:	35
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	Repository files for searchable repositories
 
 License:	GPL
@@ -26,18 +26,18 @@ via search in gnome-software.
 %build
 %install
 mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
-mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/pki/rpm-gpg
 mkdir -p $RPM_BUILD_ROOT%{_prefix}/lib/fedora-third-party/conf.d
 cp yum.repos.d/* $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
-cp rpm-gpg/* $RPM_BUILD_ROOT%{_sysconfdir}/pki/rpm-gpg
 cp risios.conf $RPM_BUILD_ROOT%{_prefix}/lib/fedora-third-party/conf.d/
 
 %files
 %{_prefix}/lib/fedora-third-party/conf.d/*.conf
 %config(noreplace) /etc/yum.repos.d/*
-/etc/pki/rpm-gpg/*
 
 %changelog
+* Wed Mar 2 2022 PizzaLovingNerd <pizzalovingnerd@teknik.io> - 35-1
+- Removed third-party repos in favor of risi-script
+
 * Sun Nov 14 2021 PizzaLovingNerd <pizzalovingnerd@teknik.io> - 35-1
 - risiOS
 - Adds a bunch of extra repos and full rpmfusion
