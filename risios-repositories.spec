@@ -21,7 +21,7 @@ Repository files that make some select non-Fedora software available
 via search in gnome-software.
 
 %prep
-%autosetup
+%autosetup -n risios-repositories-main
 
 %build
 %install
