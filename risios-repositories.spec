@@ -1,6 +1,6 @@
 Name:		risios-repositories
 Version:	36
-Release:	4%{?dist}
+Release:	5%{?dist}
 Summary:	Repository files for searchable repositories
 
 License:	GPL
@@ -25,14 +25,16 @@ via search in gnome-software.
 
 %build
 %install
-mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
+mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}
 mkdir -p $RPM_BUILD_ROOT%{_prefix}/lib/fedora-third-party/conf.d
-cp yum.repos.d/* $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
+cp -a yum.repos.d $RPM_BUILD_ROOT%{_sysconfdir}
+cp -a pki $RPM_BUILD_ROOT%{_sysconfdir}
 cp risios.conf $RPM_BUILD_ROOT%{_prefix}/lib/fedora-third-party/conf.d/
 
 %files
 %{_prefix}/lib/fedora-third-party/conf.d/*.conf
 %config(noreplace) /etc/yum.repos.d/*
+%config(noreplace) /etc/pki/rpm-gpg/*
 
 %changelog
 * Wed Mar 2 2022 PizzaLovingNerd <pizzalovingnerd@teknik.io> - 35-1
