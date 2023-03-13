@@ -1,6 +1,6 @@
 Name:		risios-repositories
-Version:	37
-Release:	6%{?dist}
+Version:	38
+Release:	7%{?dist}
 Summary:	Repository files for searchable repositories
 
 License:	GPL
