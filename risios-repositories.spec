@@ -1,5 +1,5 @@
 Name:		risios-repositories
-Version:	38
+Version:	39
 Release:	7%{?dist}
 Summary:	Repository files for searchable repositories
 
