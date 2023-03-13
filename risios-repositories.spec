@@ -5,7 +5,7 @@ Summary:	Repository files for searchable repositories
 
 License:	GPL
 URL:		  https://github.com/risiOS/risios-repositories
-Source0:	https://github.com/risiOS/risios-repositories/archive/refs/heads/main.tar.gz#/risios-repositories-main.tar.gz
+Source0:	https://github.com/risiOS/risios-repositories/archive/refs/heads/fragile.tar.gz#/risios-repositories-main.tar.gz
 
 BuildArch:	noarch
 
@@ -21,7 +21,7 @@ Repository files that make some select non-Fedora software available
 via search in gnome-software.
 
 %prep
-%autosetup -n risios-repositories-main
+%autosetup -n risios-repositories-fragile
 
 %build
 %install
